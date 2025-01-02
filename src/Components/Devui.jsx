@@ -1,7 +1,8 @@
 import React from 'react'
 
-function Devio(props) {
-  console.log("props",props)
+function Devio({name,price  }) {                                 // ==  function Devio(props) {
+  console.log(name,price)                              //console.log("props",props.name) 
+                                                          
   return (
     <div className="flex flex-col rounded-xl  p-4"
     style={{
@@ -22,8 +23,8 @@ function Devio(props) {
     </div>
     <div className="flex flex-col  rounded-b-xl py-4 ">
       <div className="flex justify-between">
-        <h1 className="font-RubikBold ">Bored ape</h1>
-        <h1 className="font-bold font-RubikBold">Price</h1>
+        <h1 className="font-RubikBold ">{name }  </h1>
+        <h1 className="font-bold font-RubikBold"> {price}</h1>
       </div>
       <div className="flex  justify-between font-mono">
       <p></p>  <p>0.01</p>
